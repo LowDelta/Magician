@@ -1,0 +1,140 @@
+==============================
+ Magician for Balatro
+==============================
+
+Tilt every probability in Balatro in your favor. Magician gives you a single
+tunable "luck meter" that biases rarities, editions, seals, tags, vouchers,
+pack sizes, Soul/Black Hole rolls, and every random trigger (Lucky Card,
+8-Ball, Bloodstone, Sixth Sense, Wheel of Fortune...) toward the outcome you
+want. Push the slider to 100% and maximum luck really means maximum luck:
+1-in-5 becomes 5-in-5, 1-in-15 becomes 15-in-15, Glass cards stop shattering,
+and Gros Michel refuses to go extinct.
+
+------------------------------
+ WHAT IT DOES
+------------------------------
+
+- Joker Rarity Luck
+  Rolls Rare jokers far more often. At 100% intensity, every rolled joker is
+  Rare.
+
+- Biased Towards Your Run
+  Reads your current deck (rank counts, suit counts, most-played hand, owned
+  jokers, editioned jokers) and classifies it into one of 11 meta archetypes
+  (Baron / face deck, Flush stack, Fibonacci chain, Blueprint copy core,
+  edition stack, economy, stone deck, etc.), then steers shop jokers toward
+  that archetype's best picks.
+
+- Edition Luck
+  Boosts Foil / Holo / Polychrome chances, with an option to also include
+  Negative.
+
+- Seal Luck
+  Dramatically increases seal spawn rates.
+
+- Tag Luck
+  Rerolls skip tags to find the rarest available option.
+
+- Voucher Luck
+  Rerolls shop vouchers for a fresh pick.
+
+- Pack Size Luck
+  Upgrades Normal boosters to Jumbo and Jumbo to Mega. At max, every pack is
+  Mega.
+
+- Soul / Black Hole Luck
+  Makes The Soul and Black Hole far more likely to appear inside Arcana and
+  Spectral packs.
+
+- Hits Luck
+  Boosts every probability-based joker / enhancement trigger in the game:
+    * Lucky Card        (+20 mult, +$20)
+    * 8-Ball            (Tarot on a played 8)
+    * Space Joker       (level up the played hand)
+    * Business Card     ($2 on face cards)
+    * Reserved Parking  ($1 on face cards in hand)
+    * Bloodstone        (x1.5 mult on Heart)
+    * Sixth Sense       (Spectral from the first played 6)
+    * Seance            (Spectral on Straight Flush)
+    * Hit the Road      (on Jack discard)
+    * Hallucination     (Tarot on pack skip)
+    * Wheel of Fortune  (edition on a joker)
+
+- No Negative Hits
+  Protects you from the bad random rolls:
+    * Gros Michel never goes extinct.
+    * Cavendish never goes extinct.
+    * Glass cards don't shatter after scoring.
+
+------------------------------
+ TWO SLIDERS
+------------------------------
+
+Intensity (%)
+  The main luck meter. Controls every feature's strength. 0% disables all
+  bias, 100% maxes every feature out.
+
+Shrink (%)
+  Secondary knob for how aggressively the Hits Luck / Soul Luck / No
+  Negative Hits systems collapse probability rolls. At 100% Shrink +
+  100% Intensity, probabilistic triggers fire 100% of the time. Drop
+  Shrink below 100% if you want Intensity 100% everywhere except the hit
+  triggers.
+
+------------------------------
+ HOW TO OPEN THE SETTINGS
+------------------------------
+
+There are four places you can open Magician's panel:
+
+  1. F6 anywhere - opens / closes the overlay on top of whatever screen you
+     are on.
+  2. The Mods menu -> Magician -> Config.
+  3. The Settings menu -> new "Magician" tab (alongside Game / Video /
+     Graphics / Audio).
+  4. In-run pause menu (Esc) -> "Magician" button.
+
+------------------------------
+ MASTER ENABLED
+------------------------------
+
+A single top-right toggle kills every effect of the mod instantly without
+losing your settings. Useful for A/B testing a run or playing legit without
+uninstalling.
+
+------------------------------
+ DESIGN PRINCIPLES
+------------------------------
+
+- Run-seed reproducibility is preserved. The mod only touches the probability
+  rolls it explicitly opts into - card draws, shop generation pools, enemy
+  blinds, and so on are untouched.
+- Everything is opt-in per feature. Don't want edition bias? Turn it off.
+  The intensity slider still governs everything else.
+- Linear scaling. Every feature at 50% Intensity gives roughly half its
+  maximum effect, so you can tune exactly how "cheated" the run feels.
+
+------------------------------
+ COMPATIBILITY
+------------------------------
+
+Requires Steamodded (Lovely + SMODS). Works alongside other mods; Magician
+only wraps vanilla probability hooks and the settings UI, so it should not
+collide with content mods that add jokers, decks, or stakes.
+
+------------------------------
+ INSTALLATION
+------------------------------
+
+  1. Install Steamodded.
+  2. Drop the Magician folder into %AppData%\Balatro\Mods\.
+  3. Launch the game. Magician appears in the Mods list and a new tab in
+     Settings.
+
+------------------------------
+ FEEDBACK
+------------------------------
+
+Found a joker / enhancement with a random trigger that isn't being boosted?
+Open an issue with the seed name or the joker key and I'll add it to the
+Hits Luck table.
